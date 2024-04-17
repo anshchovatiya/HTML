@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            background-color: aqua;
+            box-sizing: border-box;
+            margin: 2%;
+        }
+
+        tr,
+        .tittle {
+            border: solid 1px black;
+            width: 100%;
+        }
+
+        .Heading {
+            border: solid 1px black;
+            padding: 10px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        td {
+            padding: 4px;
+        }
+
+        input,
+        #BloodGroup {
+            background-color: white;
+        }
+
+        #Photo {
+            background-color: unset;
+        }
+
+        .t1 {
+            width: 250px;
+        }
+
+        #address {
+            width: 400px
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <form action="formsubmission.html">
+        <table class="tittle">
+            <tr>
+                <td class="Heading">Student Registration Form</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td><label for="name">Name </label></td>
+                <td>
+                    <input type="text" id="name" name="name" class="t1" placeholder="Enter Full Name">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Father's name">Father's name </label></td>
+                <td>
+                    <input type="text" id="Father's name" class="t1" name="Father's name"
+                        placeholder="Enter Father's Name">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mother's name">Mother's name </label></td>
+                <td>
+                    <input type="text" id="mother's name" class="t1" name="mother's name"
+                        placeholder="Enter mother's Name">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="PhoneNumber">Phone Number</label></td>
+                <td><input type="tel" id="PhoneNumber" class="t1" name="PhoneNumber" placeholder="017xxxxxxx"></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email</label></td>
+                <td><input type="email" id="Email" class="t1" name="Email" placeholder="sample@example.com"></td>
+            </tr>
+            <tr>
+                <td>Gender </td>
+                <td><input type="radio" name="Gender" id="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="Gender" id="Female">
+                    <label for="Female">Female</label>
+                    <input type="radio" name="Gender" id="Other">
+                    <label for="Other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="DateOfBirth">Date Of Birth </label></td>
+                <td><input type="date" id="DateOfBirth" name="DateOfBirth"><i>(dd-mm-yyyy)</i></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address </label></td>
+                <td><input type="text" id="address" name="address" placeholder="Street House Road"></td>
+            </tr>
+            <tr>
+                <td><label for="BloodGroup">Blood Group </label>
+                </td>
+                <td>
+                    <select name="BloodGroup" id="BloodGroup">
+                        <option value="">Select</option>
+                        <option value="A positive">A positive</option>
+                        <option value="A negative">A negative</option>
+                        <option value="B negative">B negative</option>
+                        <option value="B positive">B positive</option>
+                        <option value="O negative">O negative</option>
+                        <option value="O positive">O positive</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Department </td>
+                <td>
+                    <label for="CSE">CSE</label>
+                    <input type="radio" name="Department" id="CSE">
+                    <label for="EEE">EEE</label>
+                    <input type="radio" name="Department" id="EEE">
+                    <label for="BBA">BBA</label>
+                    <input type="radio" name="Department" id="BBA">
+                </td>
+            </tr>
+            <tr>
+                <td>Course </td>
+                <td>
+                    <label for="C">C</label>
+                    <input type="checkbox" name="C" id="C">
+
+                    <label for="C++">C++</label>
+                    <input type="checkbox" name="C++" id="C++">
+
+                    <label for="Java">Java</label>
+                    <input type="checkbox" name="Java" id="Java">
+
+                    <label for="AI">AI</label>
+                    <input type="checkbox" name="AI" id="AI">
+
+                    <label for="Machine learning">Machine learning</label>
+                    <input type="checkbox" name="Machine learning" id="Machine learning">
+
+                    <label for="Robotics">Robotics</label>
+                    <input type="checkbox" name="Robotics" id="Robotics">
+
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Photo">Photo </label></td>
+                <td><input type="file" name="Photo" id="Photo"></td>
+            </tr>
+            <tr>
+                <td><input type="reset" id="reset" value="Reset Form"></td>
+                <td><input type="submit" id="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
 </body>
+
 </html>
